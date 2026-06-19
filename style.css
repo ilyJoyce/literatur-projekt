@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+    background-color: #1a1a1a;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: cyan;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #00ffff33;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 2px 10px rgba(0,255,255,0.1);
+}
+
+header img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: cyan;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(0,255,255,0.08);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+nav a:hover, nav a:focus {
+    transform: translateY(-3px);
+    background: rgba(0,255,255,0.06);
+    box-shadow: 0 8px 20px rgba(0,255,255,0.06);
+}
+
+nav a:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+nav a:visited {
+    color: cyan;
+}
+
+section {
+    padding: 2rem;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    margin: 1rem;
+    border-radius: 5px;
+    border: 2px solid aqua;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20px;
+}
+
+section h2 span:hover {
+  --scale: 1.5;
+}
+
+section h2 {
+  font-size: calc(1.5rem * var(--scale));
+  text-decoration: underline;
+}
+
+section:hover h2 {
+    font-size: 1.8rem;
+    text-shadow: 0 0 5px cyan;
+}
+
+section h2 span:hover {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+section h2 {
+    color: cyan;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    text-decoration: none;
+    --scale: 1;
+}
+
+section span {
+    transition: all 0.3s ease
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
